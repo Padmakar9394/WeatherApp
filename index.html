@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="search-box">
+            <input type="text" placeholder="Enter the Location" class="inpt-box">
+            <button class="fa-sharp fa-solid fa-magnifying-glass" id="search-btn"></button>
+        </div>
+        <div class="location-not-found">
+            <h1>Sorry, Location not found!!!</h1>
+            <img src="./assets/404.png" alt="404 Error">
+        </div>
+        <div class="weather-body">
+            <div class="temperature">
+                <img src="./assets/clear.png" alt="clear" id="img">
+                <h3 id="temp">22°C</h3>
+                <h4 id="description">OverCast Clouds</h4>
+            </div>
+            <div class="others">
+                <div class="humidity">
+                    <i class="fa-solid fa-droplet"></i>
+                    <div>
+                        <h3 id="humi">54%</h3>
+                        <h4>Humidity</h4>
+                    </div>
+                </div>
+                <div class="wind-speed">
+                    <i class="fa-solid fa-wind"></i>
+                    <div>
+                        <h3 id="wind-spd">0.12Km/H</h3>
+                        <h4>wind-speed</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="script.js"></script>
+<script src="https://kit.fontawesome.com/595a890311.js" crossorigin="anonymous"></script>
+</html>
